@@ -1,0 +1,62 @@
+/* PALETA DE COLORES: https://coolors.co/palette/16697a-489fb5-82c0cc-ede7e3-ffa62b
+    BLANCO: ede7e3
+    CELESTITO: 82C0CC
+    CELESTITO2: 489FB5
+    AZUL: 16697A
+    AMARILLO: FFA62B*/
+
+body{
+    width:100%;
+    height:100%;
+    background-color: #82C0CC;
+}
+
+.cuadrado {
+    width:30%;
+    height:auto;
+    background-color: #fdf8f4;
+    padding:5%;
+    padding-top:1%;
+    margin:4%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+form {  width:100%;  }
+
+h1 {
+    font-size:350%;
+    color:#16697A;
+    text-align: center;
+    margin-bottom:5%;
+}
+
+form input
+{
+  border-radius: 5px;
+  width:100%;
+  border: 1px solid 16697A;
+  margin-bottom: 5%;
+  background-color: #fdf8f4;
+}
+
+form p
+{
+    font-size: larger;
+    margin-bottom: 2%;
+    color:#000000e5;
+}
+
+form .boton
+{
+  margin-top: 7%;
+  width: 80%;
+  height: 70px;
+  background-color: #FFA62B;
+  border: 0px;
+  border-radius: 20px;
+  margin-left: 7%;
+  font-size: 22px;
+}

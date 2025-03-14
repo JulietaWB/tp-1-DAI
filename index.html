@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" asp-append-version="true" />
+    <title>Tp 1</title>
+</head>
+<body>
+    
+    <div class="cuadrado">
+        <h1>Registrate</h1>
+        <form method="post" action='' onsubmit="return ValidarContraseña()"> 
+            <p>Nombre completo</p> <input type="text" name="nombre" >
+            <p>Correo Electrónico</p> <input type="email" name="email"> 
+            <p>Contraseña</p> <input type="password" name="contra" id="contra" onkeyup="ValidarContraseña()"> <p id="MostrarError" style="color:red;"></p>
+            <p>Repita su contraseña</p> <input type="password" name="contra2" id="contra2" onkeyup="CompararContraseñas()"> <p id="MostrarError2" style="color:red;"></p>
+            <p> <input class="boton" type="submit" value="ENVIAR">  </p>
+        </form>
+    </div>  
+
+    <script src="./script.js"> </script>
+</body>
+</html>
