@@ -5,19 +5,30 @@
     AZUL: 16697A
     AMARILLO: FFA62B*/
 
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
 body{
     width:100%;
     height:100%;
+    margin:0;
     background-color: #82C0CC;
+    display: flex;
 }
 
 .cuadrado {
     width:30%;
+    min-width: 400px;
+    max-width: 800px; 
     height:auto;
     background-color: #fdf8f4;
-    padding:5%;
+    padding:3%;
     padding-top:1%;
+    padding-bottom:2%;
     margin:4%;
+    margin-left:32%;
+    margin-right: 32%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -27,36 +38,64 @@ body{
 form {  width:100%;  }
 
 h1 {
-    font-size:350%;
+    font-weight: 800;
+    font-size:xx-large;
     color:#16697A;
     text-align: center;
-    margin-bottom:5%;
+    margin-bottom:4%;
+    margin-top: 5%;
 }
 
 form input
 {
-  border-radius: 5px;
-  width:100%;
-  border: 1px solid 16697A;
-  margin-bottom: 5%;
-  background-color: #fdf8f4;
+    width:100%;
+    height: 5%;
+    padding-left: 1%;
+    margin-bottom: 5%;
+    background-color: #f3efeb;
+    border: 4px solid #f3efeb ;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+form input:focus
+{
+    border: 4px solid #82C0CC ;
+    background-color: #fdf8f4;
+    border-radius: 10px;
+}
+
+form input::placeholder 
+{
+  margin-left: 10%;
+  font-weight: 300;
 }
 
 form p
 {
-    font-size: larger;
+    font-size:medium;
+    font-weight: 450;
     margin-bottom: 2%;
     color:#000000e5;
 }
 
 form .boton
 {
-  margin-top: 7%;
-  width: 80%;
-  height: 70px;
-  background-color: #FFA62B;
-  border: 0px;
-  border-radius: 20px;
-  margin-left: 7%;
-  font-size: 22px;
+    margin-top: 7%;
+    width: 85%;
+    height: auto;
+    padding: 2.5%;
+    background-color: #FFA62B;
+    border: 0px;
+    color: #fdf8f4;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    margin-left: 7%;
+    font-size:larger;
+    margin-top: 2%;
+}
+
+form .boton:hover
+{
+    background-color: #ee9211;
 }

@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Tp 1</title>
 </head>
 <body>
     
     <div class="cuadrado">
-        <h1>Registrate</h1>
+        <h1>REGISTRATE</h1>
         <form method="post" action='' onsubmit="return ValidarContraseña()"> 
-            <p>Nombre completo</p> <input type="text" name="nombre" >
-            <p>Correo Electrónico</p> <input type="email" name="email"> 
-            <p>Contraseña</p> <input type="password" name="contra" id="contra" onkeyup="ValidarContraseña()"> <p id="MostrarError" style="color:red;"></p>
-            <p>Repita su contraseña</p> <input type="password" name="contra2" id="contra2" onkeyup="CompararContraseñas()"> <p id="MostrarError2" style="color:red;"></p>
+            <p>Nombre completo</p> <input type="text" name="nombre" placeholder="Escribe tu nombre completo aquí">
+            <p>Correo Electrónico</p> <input type="email" name="email" placeholder="Escribe tu Email aquí"> 
+            <p>Contraseña</p> <input type="password" name="contra" placeholder="Escribe tu contraseña aquí" id="contra" onkeyup="ValidarContraseña()"> <p id="MostrarError" style="color:red;"></p>
+            <p>Repita su contraseña</p> <input type="password" name="contra2" placeholder="Repita tu contraseña aquí" id="contra2" onkeyup="CompararContraseñas()"> <p id="MostrarError2" style="color:red;"></p>
             <p> <input class="boton" type="submit" value="ENVIAR">  </p>
         </form>
     </div>  
