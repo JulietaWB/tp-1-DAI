@@ -13,7 +13,7 @@
     
     <div class="cuadrado">
         <h1>REGISTRATE</h1>
-        <form method="post" action='' onsubmit="return ValidarContraseña()"> 
+        <form onsubmit="EnviarForm(event);"> 
             <p>Nombre completo</p> <input type="text" name="nombre" placeholder="Escribe tu nombre completo aquí">
             <p class="error" id="error1"></p>
             <p>Correo Electrónico</p> <input type="email" name="email" placeholder="Escribe tu Email aquí"> 
@@ -23,7 +23,7 @@
             <p>Repita su contraseña</p> <input type="password" name="contra2" placeholder="Repita tu contraseña aquí" id="contra2" onkeyup="CompararContraseñas()">
             <p class="error" id="error4"></p>
 
-            <p> <input class="boton" type="submit" value="ENVIAR">  </p>
+            <p> <input class="boton" type="submit" value="ENVIAR" onclick="EnviarForm(event);">  </p>
         </form>
     </div>  
 

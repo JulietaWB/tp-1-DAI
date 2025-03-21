@@ -37,3 +37,9 @@ function CompararContraseñas()
         return true;
     }
 }
+
+EnviarForm(evt)
+{
+    evt.preventDefault();
+    alert("Usuario registrado");
+}

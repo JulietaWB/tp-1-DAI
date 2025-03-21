@@ -5,9 +5,7 @@
     AZUL: 16697A
     AMARILLO: FFA62B*/
 
-*{
-    font-family: 'Montserrat', sans-serif;
-}
+*{    font-family: 'Montserrat', sans-serif;}
 
 body{
     width:100%;
@@ -95,13 +93,9 @@ form .boton
     margin-top: 2%;
 }
 
-form .boton:hover
-{
-    background-color: #ee9211;
-}
+form .boton:hover {background-color: #ee9211;}
 
-.error
-{
+.error{
     margin-bottom: 6%;
     font-size: small;
 }
