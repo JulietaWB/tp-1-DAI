@@ -14,18 +14,17 @@
     <div class="cuadrado">
         <h1>REGISTRATE</h1>
         <form onsubmit="EnviarForm(event);"> 
-            <p>Nombre completo</p> <input type="text" name="nombre" placeholder="Escribe tu nombre completo aquí">
+            <p>Nombre completo</p> <input type="text" name="nombre" placeholder="Escribe tu nombre completo aquí" id="nombre" onkeyup="ValidarNombre()">
             <p class="error" id="error1"></p>
             <p>Correo Electrónico</p> <input type="email" name="email" placeholder="Escribe tu Email aquí"> 
-            <p class="error" id="error2"></p>
             <p>Contraseña</p> <input type="password" name="contra" placeholder="Escribe tu contraseña aquí" id="contra" onkeyup="ValidarContraseña()">
             <p class="error" id="error3"></p>
-            <p>Repita su contraseña</p> <input type="password" name="contra2" placeholder="Repita tu contraseña aquí" id="contra2" onkeyup="CompararContraseñas()">
+            <p>Repita su contraseña</p> <input type="password" name="contra2" placeholder="Repite tu contraseña aquí" id="contra2" onkeyup="CompararContraseñas()">
             <p class="error" id="error4"></p>
 
             <p> <input class="boton" type="submit" value="ENVIAR" onclick="EnviarForm(event);">  </p>
         </form>
-    </div>  
+    </div> 
 
     <script src="./script.js"> </script>
 </body>

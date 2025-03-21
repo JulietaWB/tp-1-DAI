@@ -1,3 +1,21 @@
+function ValidarNombre()
+{
+    const nombre = document.getElementById("nombre");
+    const error3 = document.getElementById("error1");
+    error1.style.color = 'red';
+
+    if (nombre.value.length<3)
+    {
+        document.getElementById("error1").innerHTML="El nombre debe tener al menos 3 caracteres";
+        return false;
+    } else{
+        error3.style.color = 'green'; 
+        document.getElementById("error1").innerHTML="✔";
+        return true;
+    } 
+}
+
+
 function ValidarContraseña()
 {
     const contra =  document.getElementById("contra");
@@ -38,7 +56,7 @@ function CompararContraseñas()
     }
 }
 
-EnviarForm(evt)
+function EnviarForm(evt)
 {
     evt.preventDefault();
     alert("Usuario registrado");
