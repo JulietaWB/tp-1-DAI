@@ -97,7 +97,7 @@ form .boton
     margin-top: 2%;
 }
 
-form .boton:hover {background-color: #ee9211;}
+form .boton:hover, form .boton:focus {background-color: #ee9211;}
 
 .error{
     margin-bottom: 6%;
