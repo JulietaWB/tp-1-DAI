@@ -59,5 +59,11 @@ function CompararContraseñas()
 function EnviarForm(evt)
 {
     evt.preventDefault();
-    alert("Usuario registrado");
+    if (ValidarNombre() && ValidarContraseña() && CompararContraseñas())
+    {
+        alert("Usuario registrado");
+    } else {
+        alert("Debe completar todos los campos correctamente");
+    }
+    
 }
