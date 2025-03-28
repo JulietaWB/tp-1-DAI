@@ -16,7 +16,8 @@
         <form onsubmit="EnviarForm(event);"> 
             <p>Nombre completo</p> <input type="text" name="nombre" placeholder="Escribe tu nombre completo aquí" id="nombre" onkeyup="ValidarNombre()">
             <p class="error" id="error1"></p>
-            <p>Correo Electrónico</p> <input type="email" name="email" placeholder="Escribe tu Email aquí"> 
+            <p>Correo Electrónico</p> <input type="text" name="email" placeholder="Escribe tu Email aquí" id="email" onkeyup="ValidarEmail()"> 
+            <p class="error" id="error2"></p>
             <p>Contraseña</p> <input type="password" name="contra" placeholder="Escribe tu contraseña aquí" id="contra" onkeyup="ValidarContraseña()">
             <p class="error" id="error3"></p>
             <p>Repita su contraseña</p> <input type="password" name="contra2" placeholder="Repite tu contraseña aquí" id="contra2" onkeyup="CompararContraseñas()">

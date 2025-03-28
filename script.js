@@ -15,6 +15,24 @@ function ValidarNombre()
     } 
 }
 
+function ValidarEmail()
+{
+    const email =  document.getElementById("email");
+    const error2 = document.getElementById("error2");
+    error2.style.color = 'red';
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+    if (!(regex.test(email.value))) {
+        document.getElementById("error2").innerHTML="El email no es válido.";
+        return false;
+    }
+    else{
+        error2.style.color = 'green'; 
+        document.getElementById("error2").innerHTML="✔";
+        return true;
+    } 
+}
+
 
 function ValidarContraseña()
 {
